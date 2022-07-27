@@ -1,0 +1,240 @@
+/* VARIABLES */
+:root{
+    --primary-color: #9356DC ;
+    --secondary-color: #FF79DA;
+    --tertiary-color: #99E2D0;
+    --primary-background-color: #f6f6f6;
+    --secondary-background-color: #eaeaea;
+    --primary-text-color: #484848;
+
+    --box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-text-color);
+    scroll-behavior: smooth;
+}
+
+.primary_btn{
+    background: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+    border-radius: 50px;
+    box-shadow: var(--box-shadow);
+    padding: 15px 25px;
+    margin: 20px 0;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* BTN LIKE */
+.btn-like svg {
+    cursor: pointer;
+    overflow: visible;
+    width: 40px;
+    transition: .2s ease;
+}
+.btn-like svg #heart {
+    transform-origin: center;
+    fill: transparent;
+    stroke: var(--primary-text-color);
+    stroke-width: 1px;
+    transition: .2s ease;
+}
+.btn-like svg:hover #heart {
+    stroke: #e0245e;
+}
+
+  
+.btn-like_checkbox {
+    display: none;
+}
+  
+.btn-like_checkbox:checked + label svg #heart {
+    transform: scale(0);
+    fill: #e0245e;
+    stroke: #e0245e;
+    animation: heart 0.25s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+.btn-like_checkbox:checked + label svg .circle {
+    animation: circle .25s forwards;
+}
+.btn-like_checkbox:checked + label svg #grp1 {
+    opacity: 1;
+    transition: 0.1s 0.2s;
+}
+.btn-like_checkbox:checked + label svg #grp1 #oval1 {
+    transform: scale(0) translate(0, -30px);
+    transform-origin: 0 0 0;
+    transition: 0.2s transform 0.2s;
+}
+.btn-like_checkbox:checked + label svg #grp1 #oval2 {
+    transform: scale(0) translate(10px, -50px);
+    transform-origin: 0 0 0;
+    transition: 1.2s transform 0.2s;
+}
+.btn-like_checkbox:checked + label svg #grp2 {
+    opacity: 1;
+    transition: 0.1s 0.2s;
+}
+.btn-like_checkbox:checked + label svg #grp2 #oval1 {
+    transform: scale(0) translate(30px, -15px);
+    transform-origin: 0 0 0;
+    transition: 0.2s transform 0.2s;
+}
+.btn-like_checkbox:checked + label svg #grp2 #oval2 {
+    transform: scale(0) translate(60px, -15px);
+    transform-origin: 0 0 0;
+    transition: 1.2s transform 0.2s;
+}
+.btn-like_checkbox:checked + label svg #grp3 {
+    opacity: 1;
+    transition: 0.1s 0.2s;
+}
+.btn-like_checkbox:checked + label svg #grp3 #oval1 {
+    transform: scale(0) translate(30px, 0px);
+    transform-origin: 0 0 0;
+    transition: 0.2s transform 0.2s;
+}
+.btn-like_checkbox:checked + label svg #grp3 #oval2 {
+    transform: scale(0) translate(60px, 10px);
+    transform-origin: 0 0 0;
+    transition: 1.2s transform 0.2s;
+}
+.btn-like_checkbox:checked + label svg #grp4 {
+    opacity: 1;
+    transition: 0.1s 0.2s;
+}
+.btn-like_checkbox:checked + label svg #grp4 #oval1 {
+    transform: scale(0) translate(30px, 15px);
+    transform-origin: 0 0 0;
+    transition: 0.2s transform 0.2s;
+}
+.btn-like_checkbox:checked + label svg #grp4 #oval2 {
+    transform: scale(0) translate(40px, 50px);
+    transform-origin: 0 0 0;
+    transition: 1.2s transform 0.2s;
+}
+.btn-like_checkbox:checked + label svg #grp5 {
+    opacity: 1;
+    transition: 0.2s all 0.2s;
+}
+.btn-like_checkbox:checked + label svg #grp5 #oval1 {
+    transform: scale(0) translate(-10px, 20px);
+    transform-origin: 0 0 0;
+    transition: 0.2s transform 0.2s;
+}
+.btn-like_checkbox:checked + label svg #grp5 #oval2 {
+    transform: scale(0) translate(-60px, 30px);
+    transform-origin: 0 0 0;
+    transition: 1.2s transform 0.2s;
+}
+.btn-like_checkbox:checked + label svg #grp6 {
+    opacity: 1;
+    transition: 0.2s 0.2s;
+}
+.btn-like_checkbox:checked + label svg #grp6 #oval1 {
+    transform: scale(0) translate(-30px, 0px);
+    transform-origin: 0 0 0;
+    transition: 0.2s transform 0.2s;
+}
+.btn-like_checkbox:checked + label svg #grp6 #oval2 {
+    transform: scale(0) translate(-60px, -5px);
+    transform-origin: 0 0 0;
+    transition: 1.2s transform 0.2s;
+}
+.btn-like_checkbox:checked + label svg #grp7 {
+    opacity: 1;
+    transition: 0.2s 0.2s;
+}
+.btn-like_checkbox:checked + label svg #grp7 #oval1 {
+    transform: scale(0) translate(-30px, -15px);
+    transform-origin: 0 0 0;
+    transition: 0.2s transform 0.2s;
+}
+.btn-like_checkbox:checked + label svg #grp7 #oval2 {
+    transform: scale(0) translate(-55px, -30px);
+    transform-origin: 0 0 0;
+    transition: 1.2s transform 0.2s;
+}
+.btn-like_checkbox:checked + label svg #grp2 {
+    opacity: 1;
+    transition: 0.2s opacity 0.2s;
+}
+.btn-like_checkbox:checked + label svg #grp3 {
+    opacity: 1;
+    transition: 0.2s opacity 0.2s;
+}
+.btn-like_checkbox:checked + label svg #grp4 {
+    opacity: 1;
+    transition: 0.2s opacity 0.2s;
+}
+.btn-like_checkbox:checked + label svg #grp5 {
+    opacity: 1;
+    transition: 0.2s opacity 0.2s;
+}
+.btn-like_checkbox:checked + label svg #grp6 {
+    opacity: 1;
+    transition: 0.2s opacity 0.2s;
+}
+.btn-like_checkbox:checked + label svg #grp7 {
+    opacity: 1;
+    transition: 0.2s opacity 0.2s;
+}
+.btn-like_checkbox:checked + label {
+    transform: translateY(-100%);
+}
+.btn-like_checkbox:checked + label {
+    transform: none;
+}
+  
+@keyframes circle {
+    from {
+        transform: scale(0) translateY(-0.05px);
+        stroke-width: 3px;
+    }
+    50% {
+        transform: scale(6) translateY(-0.05px);
+        stroke-width: 3px;
+    }
+    to {
+        transform: scale(15) translateY(-0.05px);
+        stroke-width: 0;
+    }
+}
+@keyframes heart {
+    from {
+        transform: scale(0.2);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+
+.footer_content{
+    background-color: var(--primary-text-color);
+    padding: 20px;
+}
+.footer_content_logo{
+    font-family: 'Shrikhand', cursive;
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+.footer_content ul{
+    padding: 0;
+    font-size: 0.9rem;
+}
+.footer_content ul li{
+    margin: 5px 0;
+}
+.footer_content a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.footer_content i{
+    width: 15px;
+    margin-right: 10px;
+    font-size: 0.8rem;
+}
