@@ -1,0 +1,24 @@
+{
+  "name": "projet_3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass-style": "sass --watch sass/style.scss css/style.css",
+    // "sass-home": "sass --watch sass/home.scss css/home.css",
+    // "sass-menu": "sass --watch sass/menu.scss css/menu.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaRoachie/Project3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaRoachie/Project3/issues"
+  },
+  "homepage": "https://github.com/LaRoachie/Project3#readme",
+  "dependencies": {
+    "sass": "^1.54.0"
+  }
+}

@@ -1,0 +1,46 @@
+@mixin button($firstcolor, $secondcolor, $textcolor:#FFFFFF){
+    background: linear-gradient(180deg, $firstcolor 0%, $secondcolor 100%);
+    border-radius: 50px;
+    box-shadow: var(--box-shadow);
+    padding: 15px 25px;
+    margin: 20px 0;
+    color: $textcolor;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+@mixin button_primary{
+    @include button(rgba(255,121,218,1), rgba(147,86,220,1));
+}
+
+
+
+/* FOOTER */
+@mixin footer{
+    background-color: var(--primary-text-color);
+    padding: 20px;
+    &_logo{
+        font-family: 'Shrikhand', cursive;
+        font-size: 1rem;
+        color: #FFFFFF;
+    }
+    ul{
+        padding: 0;
+        font-size: 0.9rem; 
+
+        li{
+            margin: 5px 0;
+        }
+    }
+    a{
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    i{
+        width: 15px;
+        margin-right: 10px;
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,256 @@
+/* FOOTER */
+/* ---- HOME STYLE ---- */
+/* HEADER */
+.header_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--secondary-background-color);
+}
+.header_content_logo {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0 5px;
+  width: 100%;
+  background-color: #FFFFFF;
+  box-shadow: 0px -4px 10px 0px rgb(0, 0, 0);
+  font-family: "Shrikhand", cursive;
+  font-size: 1.9rem;
+}
+.header_content_localisation {
+  display: flex;
+  padding: 15px 0px;
+  gap: 15px;
+}
+.header_content_title {
+  width: 100%;
+  padding: 25px 0;
+  background-color: var(--primary-background-color);
+  text-align: center;
+}
+
+/* MAIN */
+.functional {
+  counter-reset: functional;
+}
+.functional_title {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.functional_btn {
+  counter-increment: functional;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: var(--primary-background-color);
+  border-radius: 15px;
+  box-shadow: var(--box-shadow);
+  padding: 25px 0;
+  margin: 15px 0;
+  color: var(--primary-text-color);
+  font-size: 1rem;
+  font-weight: 700;
+}
+.functional_btn::before {
+  content: counter(functional);
+  display: flex;
+  position: absolute;
+  left: -10px;
+  background-color: var(--primary-color);
+  border-radius: 50px;
+  height: 25px;
+  width: 25px;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.functional_btn i {
+  width: 70px;
+  text-align: center;
+}
+
+.restaurants {
+  background-color: var(--primary-background-color);
+}
+.restaurants h4 {
+  margin: 5px 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.restaurants p {
+  margin: 5px 0;
+  font-weight: 300;
+}
+.restaurants_vignette {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  width: 100%;
+  height: auto;
+  background-color: #FFFFFF;
+  margin: 20px 0;
+  box-shadow: var(--box-shadow);
+}
+.restaurants_vignette_new {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #99e2d0;
+  color: #008766;
+  height: 25px;
+  width: 80px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.restaurants_vignette_image {
+  overflow: hidden;
+  height: 175px;
+}
+.restaurants_vignette_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.restaurants_vignette_info {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 15px;
+}
+.restaurants_vignette_info a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+/* BTN LIKE */
+.like-button {
+  display: none;
+}
+
+.like-icon {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+}
+.like-icon img {
+  width: 24px;
+}
+
+.str0 {
+  stroke: #484848;
+}
+
+.fil0 {
+  fill: #ffffff;
+}
+
+.like-button ~ .checked {
+  display: none;
+  stroke-width: 1px;
+}
+
+.like-button:checked ~ .unchecked {
+  display: none;
+}
+
+.like-button:checked ~ .checked {
+  display: inline;
+}
+
+.footer_content {
+  background-color: var(--primary-text-color);
+  padding: 20px;
+}
+.footer_content_logo {
+  font-family: "Shrikhand", cursive;
+  font-size: 1rem;
+  color: #FFFFFF;
+}
+.footer_content ul {
+  padding: 0;
+  font-size: 0.9rem;
+}
+.footer_content ul li {
+  margin: 5px 0;
+}
+.footer_content a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.footer_content i {
+  width: 15px;
+  margin-right: 10px;
+  font-size: 0.8rem;
+}
+
+.search_btn {
+  background: linear-gradient(180deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
+  border-radius: 50px;
+  box-shadow: var(--box-shadow);
+  padding: 15px 25px;
+  margin: 20px 0;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* ---- MENU STYLE ---- */
+/* HEADER */
+.header_content {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.header_content_back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.3rem;
+  height: 64px;
+  width: 64px;
+  text-decoration: none;
+  color: var(--primary-text-color);
+  padding: 26px 22px 0;
+}
+.header_content_logo {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0 5px;
+  width: 100%;
+  background-color: #FFFFFF;
+  font-family: "Shrikhand", cursive;
+  font-size: 1.9rem;
+}
+
+.banner {
+  position: relative;
+}
+.banner img {
+  object-fit: cover;
+  width: 100%;
+  height: 220px;
+}
+
+.menu {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--primary-background-color);
+  border-radius: 30px 30px 0 0;
+}
+.menu_tilte {
+  display: flex;
+}
+
+/*# sourceMappingURL=style.css.map */
