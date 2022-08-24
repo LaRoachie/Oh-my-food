@@ -3,11 +3,15 @@
     border-radius: 50px;
     box-shadow: var(--box-shadow);
     padding: 15px 25px;
-    margin: 20px 0;
     color: $textcolor;
     text-align: center;
     font-size: 1rem;
     font-weight: 700;
+    cursor: pointer;
+    &:hover{
+        box-shadow: var(--box-shadow-hover);
+        filter: contrast(120%);
+    }
 }
 
 

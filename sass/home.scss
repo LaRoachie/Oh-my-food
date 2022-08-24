@@ -11,12 +11,13 @@
     &_logo{
         display: flex;
         justify-content: center;
-        padding: 15px 0 5px;
+        padding: 20px 0 10px;
         width: 100%;
         background-color: #FFFFFF;
         box-shadow: 0px -4px 10px 0px rgb(0 0 0);
-        font-family: 'Shrikhand', cursive;
-        font-size: 1.9rem;
+        &_img{
+            width: 150px;
+        }
     }
     &_localisation {
         display: flex;
@@ -31,6 +32,11 @@
     }
 }
 
+.search{
+    text-align: center;
+    background-color: var(--primary-background-color);
+    padding-bottom: 50px;
+}
 
 /* MAIN */
 .functional{

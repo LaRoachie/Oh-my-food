@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
-    <title>La pelette du goût</title>
+    <title>La palette du goût</title>
 </head>
 <body>
     <header class="header_content">
@@ -19,7 +19,7 @@
             <i class="fas fa-arrow-left"></i>
         </a>
         <div class="header_content_logo">
-            <span>ohmyfood</span>
+            <img class="header_content_logo_img" src="images/logo/ohmyfood.png" alt="Logo du site">
         </div>
     </header>
     
@@ -30,53 +30,71 @@
         <div class="menu">
             <div class="menu_title">
                 <span>La palette du goût</span>
-                <div class="btn-like">
-                    <input type="checkbox" id="checkbox1" class="btn-like_checkbox"/>
-                    <label for="checkbox1">
-                    <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg" stroke-linecap="round" stroke-linejoin="round">
-                        <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
-                        <path d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z" id="heart" />
-                        <circle class="circle" cx="29.5" cy="29.5" r="1.5" stroke="#CD85E7" stroke-width="0 "/>
-
-                        <g id="grp7" opacity="0" transform="translate(7 6)">
-                            <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
-                            <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
-                        </g>
-
-                        <g id="grp6" opacity="0" transform="translate(0 28)">
-                            <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
-                            <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
-                        </g>
-
-                        <g id="grp3" opacity="0" transform="translate(52 28)">
-                            <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
-                            <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
-                        </g>
-
-                        <g id="grp2" opacity="0" transform="translate(44 6)">
-                            <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
-                            <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
-                        </g>
-
-                        <g id="grp5" opacity="0" transform="translate(14 50)">
-                            <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
-                            <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
-                        </g>
-
-                        <g id="grp4" opacity="0" transform="translate(35 50)">
-                            <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
-                            <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
-                        </g>
-
-                        <g id="grp1" opacity="0" transform="translate(24)">
-                            <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
-                            <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
-                        </g>
-                        </g>
-                    </svg>
-                    </label>
-                </div> 
+                <label class="like-icon">
+                    <input class="like-button" type="checkbox">
+                    <img src="images/like.svg" alt="" class="unchecked"/>
+                    <img src="images/likeGradient.svg" alt="" class="checked"/>
+                </label> 
             </div>
+            <div class="menu_categories">
+                <div class="menu_categories_title">
+                    <span>ENTRÉES</span>
+                    <hr>
+                </div>
+                <div class="menu_categories_items">
+                    <span>Fricassée d'escargot</span>
+                    <p>Au piment d'espelette</p>
+                </div>
+                <div class="menu_categories_items">
+                    <span>Foie gras de canard mi-cuit</span>
+                    <p>Et ses copeaux de truffe noire</p>
+                </div>
+                <div class="menu_categories_items">
+                    <span>Oeuf au plat</span>
+                    <p>Assaisonné à la truffe sur lit de...</p>
+                </div>
+            </div>
+            
+
+            <div class="menu_categories">
+                <div class="menu_categories_title">
+                    <span>PLATS</span>
+                    <hr>
+                </div>
+                <div class="menu_categories_items">
+                    <span>Filet de boeuf aux herbes</span>
+                    <p>Accompagnées de sa ribambelle de légu...</p>
+                </div>
+                <div class="menu_categories_items">
+                    <span>Parmentier de queue de boeuf</span>
+                    <p>À la truffe noire sur sa purée de panais</p>
+                </div>
+                <div class="menu_categories_items">
+                    <span>Filet de Turbot</span>
+                    <p>Aux agrumes</p>
+                </div>
+            </div>
+            
+
+            <div class="menu_categories">
+                <div class="menu_categories_title">
+                    <span>DESSERTS</span>
+                    <hr>
+                </div>
+                <div class="menu_categories_items">
+                    <span>Paris-Brest</span>
+                    <p>Revisité</p>
+                </div>
+                <div class="menu_categories_items">
+                    <span>Macaron au chocolat d'exception</span>
+                    <p>Et glace à la vanille de Madagascar</p>
+                </div>
+                <div class="menu_categories_items">
+                    <span>Mousse au chocolat</span>
+                    <p>Au piment d'espelette et à la truffe noire</p>
+                </div>
+            </div>
+            
         </div>
     </Main>
 
@@ -87,7 +105,7 @@
                 <li><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
                 <li><a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a></li>
                 <li><a href="#">Mentions légales</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="mailto: someone@example.com" target="_blank">Contact</a></li>
             </ul>
         </div>
     </footer>

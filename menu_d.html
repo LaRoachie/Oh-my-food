@@ -4,9 +4,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu D</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
+    <title>Le délice des sens</title>
 </head>
 <body>
+    <header class="header_content">
+        <a href="./index.html" class="header_content_back">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+        <div class="header_content_logo">
+            <img class="header_content_logo_img" src="images/logo/ohmyfood.png" alt="Logo du site">
+        </div>
+    </header>
     
+    <Main class="container">
+        <div class="banner">
+            <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
+        </div>
+        <div class="menu">
+            <div class="menu_title">
+                <span>Le délice des sens</span>
+                <label class="like-icon">
+                    <input class="like-button" type="checkbox">
+                    <img src="images/like.svg" alt="" class="unchecked"/>
+                    <img src="images/likeGradient.svg" alt="" class="checked"/>
+                </label> 
+            </div>
+            <div class="menu_categories">
+                <div class="menu_categories_title">
+                    <span>ENTRÉES</span>
+                    <hr>
+                </div>
+                <div class="menu_categories_items">
+                    <span>Tartare de thon</span>
+                    <p>Assaisonné au yuzu</p>
+                </div>
+                <div class="menu_categories_items">
+                    <span>Bouchée de homard croustillant</span>
+                    <p>Et sa farandole de petits légumes</p>
+                </div>
+                <div class="menu_categories_items">
+                    <span>Velouté de cèpes</span>
+                    <p>Aux truffes</p>
+                </div>
+            </div>
+            
+
+            <div class="menu_categories">
+                <div class="menu_categories_title">
+                    <span>PLATS</span>
+                    <hr>
+                </div>
+                <div class="menu_categories_items">
+                    <span>Poulet rôti aux herbes de provence</span>
+                    <p>Et sa crème de truffe</p>
+                </div>
+                <div class="menu_categories_items">
+                    <span>Langouste rôtie</span>
+                    <p>Et ses légumes de saison</p>
+                </div>
+                <div class="menu_categories_items">
+                    <span>Côte de boeuf angus</span>
+                    <p>Et sa purée de panais</p>
+                </div>
+            </div>
+            
+
+            <div class="menu_categories">
+                <div class="menu_categories_title">
+                    <span>DESSERTS</span>
+                    <hr>
+                </div>
+                <div class="menu_categories_items">
+                    <span>Farandole de desserts</span>
+                    <p>Du chef</p>
+                </div>
+                <div class="menu_categories_items">
+                    <span>Crème brulée</span>
+                    <p>Revisité</p>
+                </div>
+                <div class="menu_categories_items">
+                    <span>Tiramisu</span>
+                    <p>À la noisette</p>
+                </div>
+            </div>
+            
+        </div>
+    </Main>
+
+    <footer>
+        <div class="footer_content">
+            <span class="footer_content_logo">ohmyfood</span>
+            <ul>
+                <li><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
+                <li><a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="mailto: someone@example.com" target="_blank">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
