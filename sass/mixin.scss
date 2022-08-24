@@ -1,4 +1,5 @@
 @mixin button($firstcolor, $secondcolor, $textcolor:#FFFFFF){
+    all: unset;
     background: linear-gradient(180deg, $firstcolor 0%, $secondcolor 100%);
     border-radius: 50px;
     box-shadow: var(--box-shadow);
@@ -14,12 +15,33 @@
     }
 }
 
+/* BTN LIKE */
+@mixin button_like($width: 24px, $checkbox-class: #{&}_checkbox, $checked-class: #{&}_checked, $unchecked-class: #{&}_unchecked){
+        cursor: pointer;
+        display: inline-block;
+        vertical-align: middle;
+        img{
+            width: $width;
+        }
+        #{$checkbox-class}{
+            display: none;
+            ~ #{$checked-class}{
+                display: none;
+            }
+            &:checked{
+                ~ #{$checked-class}{
+                    display: inline;
+                }
+                ~ #{$unchecked-class}{
+                    display: none;
+                }
+            }
+        }
+}
 
 @mixin button_primary{
     @include button(rgba(255,121,218,1), rgba(147,86,220,1));
 }
-
-
 
 /* FOOTER */
 @mixin footer{

@@ -1,4 +1,5 @@
 /* ---- MENU STYLE ---- */
+@use "mixin";
 /* HEADER */
 .header_content{
     &_back{
@@ -14,9 +15,10 @@
     }
 }
 
-// .container{
-//     padding: 50px;
-// }
+.container{
+    display: flex;
+    flex-direction: column;
+ }
 .banner{
     img{
         object-fit: cover;
@@ -26,9 +28,8 @@
 }
 
 .menu{
-    position: absolute;
     width: 100%;
-    top: 245px;
+    margin-top: -40px;
     padding: 25px 20px;
     background-color: var(--primary-background-color);
     border-radius: 35px 35px 0 0;
@@ -71,6 +72,11 @@
             }
         }
     }
+    &_like{
+        @include mixin.button_like;
+    }
     
     
 }
+
+
