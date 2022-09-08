@@ -4,8 +4,8 @@
 /* SPINNER */
 .loader{
     display: flex;
-    z-index: 100;
     position: fixed;
+    pointer-events: none;
     top: 0;
     opacity: 0;
     justify-content: center;
@@ -13,9 +13,6 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.6);
-    // animation-duration: 3s;
-    // animation-name: container;
-    // animation-iteration-count: 1;
     animation: disappear 3s linear 1;
     &_spinner{
         border: 5px solid var(--secondary-color);
@@ -37,13 +34,20 @@
 }
 @keyframes disappear {
     0% {
+        transform:translate(0);
+        opacity: 1;
+    }
+    90% {
+        transform:translate(0);
         opacity: 1;
     }
     99% {
-        opacity: 1;
+        transform:translate(0);
+        opacity: 0;
     }
     100% {
-        opacity: 0;
+        transform:translate(-100%);
+        opacity: 0;  
     }
 }
 

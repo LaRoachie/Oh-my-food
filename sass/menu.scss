@@ -30,7 +30,7 @@
 .menu{
     width: 100%;
     margin-top: -40px;
-    padding: 25px 20px;
+    padding: 25px 10px;
     background-color: var(--primary-background-color);
     border-radius: 35px 35px 0 0;
     &_title{
@@ -57,26 +57,94 @@
             margin: 5px 0;
         }
         &_items{
+            display: grid;
+            grid-template-areas:    "title          price   checkmark"
+                                    "description    price   checkmark";
+            grid-template-columns: 1fr 45px 0;
             background-color: #FFFFFF;
             box-shadow: var(--box-shadow);
+            overflow: hidden;
             border-radius: 12px;
-            padding: 10px;
+            padding: 0 0 0 10px;
             margin: 15px 0;
-            span{
+            cursor: pointer;
+            transition: all 3s ease-in-out;
+            &:hover{
+                grid-template-columns: 1fr 45px 55px;
+                transition: all 3s ease-in-out;
+            }
+            &:hover + &_checkmark i{
+                transform: rotate(360deg);
+            }
+            
+            &_title{
+                grid-area: title;
                 font-size: 1rem;
                 font-weight: 600;
+                padding: 8px 0 4px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
-            p{
+            &_description{
+                grid-area: description;
                 font-size: 0.9rem;
-                margin: 0;
+                padding: 4px 0 8px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                transition: all 3s ease-in-out;
+            }
+            &_price{
+                grid-area: price;
+                font-size: 0.9rem;
+                margin-right: 20px;
+                margin-left: 10px;
+                padding: 4px 0 8px;
+                display: flex;
+                align-items: flex-end;
+                transition: all 3s ease-in-out;
+            }
+            &_checkmark{
+                grid-area: checkmark;
+                font-size: 0.9rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                width: 55px;
+                background-color: var(--tertiary-color);
+                color: #FFFFFF;
+                cursor: pointer;
+                transition: all 1s ease-in-out;
+                i{
+                    transition: all 1s ease-in-out;
+                }
             }
         }
     }
+
+
+    @for $i from 1 through 3 {
+        &_categories:nth-child(#{$i + 1}) {
+            animation-name: appear;
+            animation-duration: 1s;
+            animation-delay: 500ms * ($i - 1);
+            animation-fill-mode: both;
+        }
+    }
+
+
     &_like{
         @include mixin.button_like;
     }
-    
-    
 }
 
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
