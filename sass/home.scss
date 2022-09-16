@@ -135,9 +135,9 @@
 }
 .restaurants{
     background-color: var(--primary-background-color);
-    h4{
+    &_title{
         margin: 5px 0;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         font-weight: 700;
     }
     p{
