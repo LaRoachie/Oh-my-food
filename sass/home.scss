@@ -51,7 +51,6 @@
     }
 }
 
-
 /* HEADER */
 .header_content{
     display: flex;
@@ -81,7 +80,6 @@
         text-align: center;
     }
 }
-
 .search{
     text-align: center;
     background-color: var(--primary-background-color);
@@ -135,7 +133,6 @@
         }
     }
 }
-
 .restaurants{
     background-color: var(--primary-background-color);
     h4{
@@ -187,11 +184,6 @@
             justify-content: space-between;
             align-items: center;
             margin: 5px 15px;
-
-            // a{
-            //     text-decoration: none;
-            //     color: var(--primary-text-color);
-            // }
         }
         &_link{
             text-decoration: none;
@@ -205,10 +197,10 @@
         @include mixin.button_like;
     }
 }
-
 .footer_content{
     @include mixin.footer;
 }
+
 
 /* RESPONSIVE DESIGN */
 /* DESKTOP */
@@ -237,8 +229,6 @@
         }
     }
 }
-
-/* RESPONSIVE DESIGN */
 /* TABLET PORTRAIT */
 @media only screen and (min-device-width : 768px) and (orientation : portrait) {
     body{
