@@ -205,6 +205,7 @@
 .restaurants_vignette_link {
   text-decoration: none;
   color: var(--primary-text-color);
+  width: 100%;
 }
 .restaurants_vignette_link :hover {
   text-decoration: underline;
@@ -223,10 +224,10 @@
 .restaurants_like .restaurants_like_checkbox ~ .restaurants_like_checked {
   display: none;
 }
-.restaurants_like .restaurants_like_checkbox:checked ~ .restaurants_like_checked {
+.restaurants_like .restaurants_like_checkbox:checked ~ .restaurants_like_checked, .restaurants_like .restaurants_like_checkbox:hover ~ .restaurants_like_checked {
   display: inline;
 }
-.restaurants_like .restaurants_like_checkbox:checked ~ .restaurants_like_unchecked {
+.restaurants_like .restaurants_like_checkbox:checked ~ .restaurants_like_unchecked, .restaurants_like .restaurants_like_checkbox:hover ~ .restaurants_like_unchecked {
   display: none;
 }
 
@@ -444,10 +445,10 @@
 .menu_like .menu_like_checkbox ~ .menu_like_checked {
   display: none;
 }
-.menu_like .menu_like_checkbox:checked ~ .menu_like_checked {
+.menu_like .menu_like_checkbox:checked ~ .menu_like_checked, .menu_like .menu_like_checkbox:hover ~ .menu_like_checked {
   display: inline;
 }
-.menu_like .menu_like_checkbox:checked ~ .menu_like_unchecked {
+.menu_like .menu_like_checkbox:checked ~ .menu_like_unchecked, .menu_like .menu_like_checkbox:hover ~ .menu_like_unchecked {
   display: none;
 }
 

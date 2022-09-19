@@ -28,7 +28,8 @@
             ~ #{$checked-class}{
                 display: none;
             }
-            &:checked{
+            &:checked,
+            &:hover{
                 ~ #{$checked-class}{
                     display: inline;
                 }

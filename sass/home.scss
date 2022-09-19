@@ -188,6 +188,7 @@
         &_link{
             text-decoration: none;
             color: var(--primary-text-color);
+            width: 100%;
             :hover{
                 text-decoration: underline;
             }
