@@ -28,13 +28,22 @@
             ~ #{$checked-class}{
                 display: none;
             }
-            &:checked,
-            &:hover{
+            &:checked{
                 ~ #{$checked-class}{
                     display: inline;
                 }
                 ~ #{$unchecked-class}{
                     display: none;
+                }
+            }
+            @media only screen and (min-width : 1080px) {
+                &:hover{
+                    ~ #{$checked-class}{
+                        display: inline;
+                    }
+                    ~ #{$unchecked-class}{
+                        display: none;
+                    }
                 }
             }
         }
